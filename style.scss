@@ -175,6 +175,7 @@ h6 {
     div:not(.img-container):not(.hiking) {
         @media (min-width: 800px) {
             max-height: 700px;
+            overflow-y: auto;
         }
     }
 
