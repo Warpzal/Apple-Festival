@@ -69,12 +69,6 @@ h6 {
     background: #b30000;
 }
 
-@media (max-width: 800px) {
-    * {
-        overflow: visible !important;
-    }
-}
-
 .header {
     position: relative;
     isolation: isolate;
@@ -168,8 +162,10 @@ h6 {
     }
 
     div:not(.img-container) {
-        max-height: 7000px;
-        overflow: auto;
+        max-height: 700px;
+        @media (min-width: 800px) {
+            overflow: auto;
+        }
     }
 
     .img-container {
