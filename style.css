@@ -27,7 +27,8 @@ ul ul {
   list-style-image: none;
 }
 
-p {
+p,
+li {
   line-height: 30px;
 }
 
@@ -67,6 +68,11 @@ h6 {
   background: #b30000;
 }
 
+@media (max-width: 800px) {
+  * {
+    overflow: visible !important;
+  }
+}
 .header {
   position: relative;
   isolation: isolate;
@@ -155,7 +161,7 @@ h6 {
   }
 }
 .grid div:not(.img-container) {
-  height: 650px;
+  max-height: 650px;
   overflow: auto;
 }
 .grid .img-container {
@@ -181,5 +187,5 @@ h6 {
 }
 
 #vineyard {
-  height: 400px;
+  max-height: 400px;
 }/*# sourceMappingURL=style.css.map */

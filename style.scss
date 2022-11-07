@@ -28,7 +28,8 @@ ul {
     }
 }
 
-p {
+p,
+li {
     line-height: 30px;
 }
 
@@ -66,6 +67,12 @@ h6 {
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
     background: #b30000;
+}
+
+@media (max-width: 800px) {
+    * {
+        overflow: visible !important;
+    }
 }
 
 .header {
@@ -161,7 +168,7 @@ h6 {
     }
 
     div:not(.img-container) {
-        height: 650px;
+        max-height: 650px;
         overflow: auto;
     }
 
@@ -185,5 +192,5 @@ h6 {
 }
 
 #vineyard {
-    height: 400px;
+    max-height: 400px;
 }
