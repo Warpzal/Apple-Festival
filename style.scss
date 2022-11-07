@@ -23,6 +23,9 @@ main {
 
 ul {
     list-style-image: url('./images/apple-icon.webp');
+    ul {
+        list-style-image: none;
+    }
 }
 
 p {
@@ -114,7 +117,7 @@ h6 {
 
 .carousel {
     width: 100%;
-    height: 570px;
+    height: 600px;
     margin: 0 auto;
     overflow: hidden;
 
@@ -125,6 +128,7 @@ h6 {
     }
 
     &-item img {
+        border-radius: 5px;
         width: 100%;
         height: 100%;
         object-position: center;
@@ -157,7 +161,7 @@ h6 {
     }
 
     div:not(.img-container) {
-        height: 600px;
+        height: 650px;
         overflow: auto;
     }
 
@@ -166,16 +170,20 @@ h6 {
         height: 100%;
         flex-basis: 50%;
         order: -1;
-
+        border-radius: 5px;
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center;
+            border-radius: inherit;
+        }
         @media (min-width: 800px) {
             order: initial;
         }
     }
+}
 
-    img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        object-position: center;
-    }
+#vineyard {
+    height: 400px;
 }
