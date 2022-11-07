@@ -1,7 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Poor+Story&display=swap');
 
 :root {
-    --color-primary: #c31432;
+    --color-primary: hsl(350, 81%, 42%);
+    --color-secondary: hsl(350, 81%, 82%);
     --spacer-h2: 15vh;
 }
 
@@ -46,6 +47,11 @@ h6 {
 .accordion-header {
     font-family: sans-serif;
 }
+
+// .accordion-button:not(.collapsed) {
+//     color: var(--color-primary) !important;
+//     background: var(--color-secondary) !important;
+// }
 
 // @media (max-width: 800px) {
 //     div {

@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Poor+Story&display=swap");
 :root {
-  --color-primary: #c31432;
+  --color-primary: hsl(350, 81%, 42%);
+  --color-secondary: hsl(350, 81%, 82%);
   --spacer-h2: 15vh;
 }
 
