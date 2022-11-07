@@ -161,7 +161,7 @@ h6 {
   }
 }
 .grid div:not(.img-container) {
-  max-height: 650px;
+  max-height: 7000px;
   overflow: auto;
 }
 .grid .img-container {
