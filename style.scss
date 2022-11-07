@@ -47,6 +47,11 @@ h6 {
     font-family: sans-serif;
 }
 
+// @media (max-width: 800px) {
+//     div {
+//         overflow: auto;
+//     }
+// }
 /* width */
 ::-webkit-scrollbar {
     width: 6px;
@@ -161,10 +166,9 @@ h6 {
         }
     }
 
-    div:not(.img-container) {
-        max-height: 700px;
+    div:not(.img-container):not(.hiking) {
         @media (min-width: 800px) {
-            overflow: auto;
+            max-height: 700px;
         }
     }
 

@@ -155,12 +155,9 @@ h6 {
     flex-basis: 50%;
   }
 }
-.grid div:not(.img-container) {
-  max-height: 700px;
-}
 @media (min-width: 800px) {
-  .grid div:not(.img-container) {
-    overflow: auto;
+  .grid div:not(.img-container):not(.hiking) {
+    max-height: 700px;
   }
 }
 .grid .img-container {
