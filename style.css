@@ -1,0 +1,175 @@
+@import url("https://fonts.googleapis.com/css2?family=Poor+Story&display=swap");
+:root {
+  --color-primary: #c31432;
+  --spacer-h2: 15vh;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #f3f3f3;
+}
+
+main {
+  padding: 30px;
+  margin: 0 auto;
+  max-width: 1600px;
+}
+
+ul {
+  list-style-image: url("./images/apple-icon.webp");
+}
+
+p {
+  line-height: 30px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Poor Story", cursive;
+  font-weight: bolder;
+}
+
+.accordion-header {
+  font-family: sans-serif;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey;
+  border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: var(--color-primary);
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #b30000;
+}
+
+.header {
+  position: relative;
+  isolation: isolate;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  background-color: white;
+  background-image: url("./images/apple-icon.webp");
+  background-size: 1%;
+  background-repeat: repeat;
+}
+.header::after {
+  content: "";
+  background: rgba(0, 0, 0, 0.6);
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+}
+.header__heading {
+  color: white;
+  filter: drop-shadow(0 1px 1px rgba(0, 0, 0, 0.05));
+}
+.header__logo {
+  height: 80px;
+  padding-right: 20px;
+}
+
+.about {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.about h2 {
+  font-size: 32px;
+}
+.about p {
+  font-size: 18px;
+}
+
+.carousel {
+  width: 100%;
+  height: 570px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+.carousel-inner, .carousel-item {
+  width: 100%;
+  height: 100%;
+}
+.carousel-item img {
+  width: 100%;
+  height: 100%;
+  -o-object-position: center;
+     object-position: center;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.navbar {
+  position: -webkit-sticky !important;
+  position: sticky !important;
+  top: -1px;
+  z-index: 1000;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -2px rgba(0, 0, 0, 0.1);
+}
+
+.navbar.is-pinned {
+  background: rgba(255, 255, 255, 0.95) !important;
+}
+
+.grid {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+@media (min-width: 800px) {
+  .grid {
+    flex-direction: row;
+    grid-template-columns: 1fr 1fr;
+  }
+  .grid * {
+    flex-basis: 50%;
+  }
+}
+.grid div:not(.img-container) {
+  height: 600px;
+  overflow: auto;
+}
+.grid .img-container {
+  width: 100%;
+  height: 100%;
+  flex-basis: 50%;
+  order: -1;
+}
+@media (min-width: 800px) {
+  .grid .img-container {
+    order: initial;
+  }
+}
+.grid img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}/*# sourceMappingURL=style.css.map */

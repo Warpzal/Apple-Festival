@@ -1,341 +1,373 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+
     <title>Ithaca Apple Harvest Festival</title>
-    <link rel="stylesheet" type="text/css" href="styles/index.css" media="all">
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
-        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js"
-        integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk"
-        crossorigin="anonymous"></script>
+
+    <!-- Personal CSS -->
+    <link rel="stylesheet" href="./style.css">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
 </head>
 
 <body>
-
-    <header>
-        <div id="title">
-            <h1>Ithaca Apple Harvest Festival</h1>
-            <img id="logo" src="images/apple-harvest-logo.svg" alt="Apple harvest logo">
-        </div>
-        <nav>
-            <h3>Navigation</h3>
-            <ul>
-                <li><a href="things-to-do.html">Other Activities in Ithaca</a></li>
-                <li><a href="transportation.html">Transportation in Ithaca</a></li>
-            </ul>
-        </nav>
+    <header class="header">
+        <!-- Navbar Logo -->
+        <img class="header__logo" src="./images/apple-harvest-logo.svg" alt="logo">
+        <h1 class="header__heading">Ithaca Apple Harvest Festival </h1>
     </header>
 
-    <main>
-        <div class="accordion" id="accordionExample">
-            <div class="accordion-item">
-                <h2 class="accordion-header" id="headingOne">
-                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                        Accordion Item #1
-                    </button>
-                </h2>
-                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
-                    data-bs-parent="#accordionExample">
-                    <div class="accordion-body">
-                        <strong>This is the first item's accordion body.</strong> It is shown by default, until the
-                        collapse plugin adds the appropriate classes that we use to style each element. These classes
-                        control the overall appearance, as well as the showing and hiding via CSS transitions. You can
-                        modify any of this with custom CSS or overriding our default variables. It's also worth noting
-                        that just about any HTML can go within the <code>.accordion-body</code>, though the transition
-                        does limit overflow.
-                    </div>
-                </div>
-            </div>
-            <div class="accordion-item">
-                <h2 class="accordion-header" id="headingTwo">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                        Accordion Item #2
-                    </button>
-                </h2>
-                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
-                    data-bs-parent="#accordionExample">
-                    <div class="accordion-body">
-                        <strong>This is the second item's accordion body.</strong> It is hidden by default, until the
-                        collapse plugin adds the appropriate classes that we use to style each element. These classes
-                        control the overall appearance, as well as the showing and hiding via CSS transitions. You can
-                        modify any of this with custom CSS or overriding our default variables. It's also worth noting
-                        that just about any HTML can go within the <code>.accordion-body</code>, though the transition
-                        does limit overflow.
-                    </div>
-                </div>
-            </div>
-            <div class="accordion-item">
-                <h2 class="accordion-header" id="headingThree">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                        Accordion Item #3
-                    </button>
-                </h2>
-                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
-                    data-bs-parent="#accordionExample">
-                    <div class="accordion-body">
-                        <strong>This is the third item's accordion body.</strong> It is hidden by default, until the
-                        collapse plugin adds the appropriate classes that we use to style each element. These classes
-                        control the overall appearance, as well as the showing and hiding via CSS transitions. You can
-                        modify any of this with custom CSS or overriding our default variables. It's also worth noting
-                        that just about any HTML can go within the <code>.accordion-body</code>, though the transition
-                        does limit overflow.
-                    </div>
-                </div>
+    <nav class="navbar navbar-expand-lg bg-light">
+        <div class="container-fluid d-flex justify-content-center">
+
+            <!-- Hamburger Menu -->
+            <button class="navbar-toggler " type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Navbar Items -->
+            <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./activities.html">Activities</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Transportation</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./faq.html">FAQ</a>
+                    </li>
+                </ul>
             </div>
         </div>
-        <article>
-            <h2>Welcome to the Apple Harvest Festival</h2>
-            <p>Apple Harvest Festival will host plenty of farmstand fresh apples and produce, delectable apple and
+    </nav>
+
+    <!-- Carousel -->
+    <!-- <div id="carouselExampleControls" class="carousel carousel slide" data-bs-ride="carousel">
+
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="./images/apple-basket-many.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="./images/apples-pile-close.jpg" class="d-block w-100" alt="...">
+            </div>
+        </div>
+
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div> -->
+
+    <main>
+        <section class="about">
+            <h2 class="display-5 fw-bold py-5">Welcome to the Apple Harvest Festival</h2>
+            <p class="pb-5">
+                Apple Harvest Festival will host plenty of farmstand fresh apples and produce, delectable apple and
                 seasonal baked goods, a variety of food trucks offering tasty bites, and a craft fair with artisans from
                 around the region. There will also be live music and entertainment, plus a cider trail to enjoy
                 refreshing cider in store and plenty of great apple and apples-inspired products for sale inside shops
-                in and around Downtown.</p>
-            <img src="images/sign-vendor.jpg" alt="Apple festival vendor">
-            <h2>40th Annual Apple Harvest Festival</h2>
-            <h3>History of the Festival</h3>
-            <p>Since 1982, the Ithaca Apple Harvest Festival hosts apples, baked goods, family entertainment, games,
-                prizes, live entertainment and more. Over 100 talented artists, crafters, bakers, and makers come
-                together for the Apple Harvest Craft Fair! Find creative, unique works from clothing to woodworking,
-                ceramics to paintings, fudge to essential oils and beyond throughout the festival. The festival is held
-                in the Ithaca Commons, a few streets that are full of restaurants and shops.</p>
-            <p>We are excited to welcome you back to one of Ithaca’s most celebrated events: the Apple Harvest Festival!
-                Join us for three days of farm-fresh bites, local crafts, live music, and fall activities for all ages.
+                in and around Downtown.
             </p>
-            <p>This annual festival marks the beginning of the fall harvest season, and features local apples and the
-                Finger Lakes food, craft, and entertainment community! The weekend's happenings gives Ithaca residents,
-                students, and visitors an opportunity to interact with small businesses and creators in the area.
-                Welcome fall with us by visiting one of Ithaca's most famous events!</p>
-            <h3>Times, Dates, and Location</h3>
-            <picture><img src="images/commons-far.jpg" alt="commons entrance">
-            </picture>
-            <ul>
-                <li>Festival Dates: September 30-October 2</li>
-                <li>Festival Location: Located on the Ithaca Commons</li>
-            </ul>
-            <img src="images/apple-harvest-map.svg" alt="Apple harvest map">
-            <h4>Festival Hours</h4>
-            <ul>
-                <li>Friday, September 30: 12pm - 6pm</li>
-                <li>Saturday, October 1: 10am - 6pm</li>
-                <li>Sunday, October 2: 10am - 6pm</li>
-            </ul>
-            <h3>Entertainment</h3>
-            <p>Located at the Bernie Milton Pavilion</p>
-            <img src="images/fire.jpg" alt="fire performance">
-            <h4>Saturday, October 1, 2022</h4>
-            <ul>
-                <li>12:00pm - Rachel Beverly</li>
-                <li>1:00pm - Sunny Weather</li>
-                <li>2:00pm - Firefly Jazz Quartet</li>
-                <li>3:00pm - Janet Batch</li>
-                <li>4:00pm - Leo + The Maydays</li>
-                <li>5:00pm - Neo Project</li>
-            </ul>
-            <h4>Sunday, October 2, 2022</h4>
-            <ul>
-                <li>12:00pm - Ageless Jazz Band</li>
-                <li>1:00pm - Yamatai</li>
-                <li>1:30pm - Fall Creek Brass Band</li>
-                <li>3:00pm - Viva Mayhem</li>
-                <li>4:00pm - Noon Fifteen</li>
-                <li>5:00pm - Ariel Arbisser</li>
-            </ul>
-            <h3>Vendors</h3>
-            <p>With over 100 vendors present at the festival, there are many opportunities to be introduced to the rich
-                artisan and culinary community in Ithaca. Our food vendors feature apple-centric and other fall classics
-                for you to taste, and the craft vendors offer homemade goods like soaps, jewelry, sculptures, clothing,
-                and more! This is the perfect place to learn about and support Ithaca's small businesses that encompass
-                the heart of the town.
-            </p>
-            <h4>Farm Fresh Apples & Produce</h4>
-            <img src="images/apple-basket-many.jpg" alt="apple-basket-many">
-            <ul>
-                <li>Schweigarts Sugar Shack</li>
-                <li>Schoolyard Sugarbush</li>
-                <li>A J Teeterfarm</li>
-                <li>Littletree Orchards</li>
-                <li>Creamcycle</li>
-                <li>Maple River Syrup Company</li>
-                <li>MacDonald Farms</li>
-                <li>Cornell Society of Horticulture</li>
-                <li>Laughing Goat Fiber Farm</li>
-                <li>Robbie’s Produce</li>
-                <li>Picaflor Farm</li>
-                <li>Little Farm Bakery</li>
-                <li>Little Grey Bakery</li>
-                <li>Mojo Hot Sauce</li>
-            </ul>
-            <img src="images/apples-pile-close.jpg" alt="apple piles">
-            <img src="images/blueberry-stand.jpg" alt="blueberry stand">
+        </section>
 
-            <h4>Cider Houses & Wineries</h4>
-            <img src="images/apple-cider-jugs.jpg" alt="cider jugs">
-            <ul>
-                <li> Blackduck Cidery</li>
-                <li> Redbyrd Orchard</li>
-                <li> South Hill Cider</li>
-                <li> New Leaf Cider Co.</li>
-                <li> Thousand Islands Winery</li>
-                <li> Finger Lakes Cider House</li>
-                <li> New York Cider Company</li>
-                <li> Eve's Cidery</li>
-                <li> Ashley Lynn Winery</li>
-            </ul>
-            <img src="images/vendor-cider.jpg" alt="cider vendor">
-            <h4>Food Vendors</h4>
-            <img src="images/people-eating-apples.jpg" alt="food people-eating-apples">
-            <ul>
-                <li> Macarollin</li>
-                <li> Mr. Squeeze Lemonade</li>
-                <li> Kettle Corn Shoppe</li>
-                <li> SPM Empanadas</li>
-                <li> Fittnell Barbeque</li>
-                <li> Tibetan Momo Bar</li>
-                <li> Travelers Kitchen</li>
-                <li> Asempe Kitchen</li>
-                <li> Vail Bros inc</li>
-                <li> On The Street Pitas</li>
-                <li> Silo Food Truck</li>
-                <li> B&B Kettle Korn</li>
-                <li> Robbie’s Produce</li>
-                <li> PDRS Catering</li>
-                <li> Trini Style</li>
-                <li> Coltivare</li>
-                <li> She Messy Tacos</li>
-                <li> Adam Grill</li>
-                <li> Thai Basil</li>
-                <li> Zocalo</li>
-                <li> Yxi's Arepas & Gordito</li>
-                <li> Solaz</li>
-                <li> Monks on the Commons</li>
-                <li> Smash Bros World Foods</li>
-                <li> The Yellow Deli</li>
-                <li> Thai Palace</li>
-                <li> Lou's Covert Kitchen</li>
-                <li> Playland Amusements Concessions</li>
-            </ul>
-            <img src="images/fudge.jpg" alt="food fudge">
+        <!-- History -->
+        <section class="grid">
+            <div class="img-container">
+                <img class="img img--1" src="./images/apple-basket-many.jpg" alt="">
+            </div>
+
+            <div>
+                <h2 class="pb-3">40th Annual Apple Harvest Festival</h2>
+                <p>
+                    Since 1982, the Ithaca Apple Harvest Festival hosts apples, baked goods, family entertainment,
+                    games,
+                    prizes, live entertainment and more. Over 100 talented artists, crafters, bakers, and makers come
+                    together for the Apple Harvest Craft Fair! Find creative, unique works from clothing to woodworking,
+                    ceramics to paintings, fudge to essential oils and beyond throughout the festival. The festival is
+                    held
+                    in the Ithaca Commons, a few streets that are full of restaurants and shops.
+
+                    We are excited to welcome you back to one of Ithaca’s most celebrated events: the Apple Harvest
+                    Festival! Join us for three days of farm-fresh bites, local crafts, live music, and fall activities
+                    for
+                    all ages.
+
+                    This annual festival marks the beginning of the fall harvest season, and features local apples and
+                    the
+                    Finger Lakes food, craft, and entertainment community! The weekend's happenings gives Ithaca
+                    residents,
+                    students, and visitors an opportunity to interact with small businesses and creators in the area.
+                    Welcome fall with us by visiting one of Ithaca's most famous events!
+                </p>
+            </div>
+        </section>
+
+        <!-- Times Dates and Locations -->
+        <section class="grid py-5">
+
+            <div>
+                <h2 class="pb-3">Times, Dates, and Location </h2>
+                <p>
+                    <strong>Festival Dates</strong>: September 30-October 2
+                    <br>
+                    <strong>Festival Location</strong>: Located on the Ithaca Commons
+                    <br>
+                    <br>
+                    <strong>
+                        Festival Hours
+                    </strong>
+                    <br>
+                    Friday, September 30: 12pm - 6pm
+                    <br>
+                    Saturday, October 1: 10am - 6pm
+                    <br>
+                    Sunday, October 2: 10am - 6pm
+                </p>
+            </div>
 
 
-            <h4> Crafters</h4>
-            <img src="images/jewelry.jpg" alt="jewelry crafts">
-            <ul>
-                <li> A&K Creations</li>
-                <li> Alchemist's Whim</li>
-                <li> All Forked Up Art</li>
-                <li> Anna Pausch Studios</li>
-                <li> Art Of Yen Ospina</li>
-                <li> Ashley Messana Jewelry</li>
-                <li> Bags That Bite</li>
-                <li> Black Rabbit Studio</li>
-                <li> Blue Toucan Studios </li>
-                <li> Fairy Doors</li>
-                <li> Bon Fire Craft</li>
-                <li> CHOP SHOP STORE</li>
-                <li> CM Goodenbury Photography</li>
-                <li> Crescent Moon studio</li>
-                <li> Daisy Hollow Farm</li>
-                <li> Dale Bowers Art</li>
-                <li> Dan Bingham Art</li>
-                <li> Dave’s Art Den</li>
-                <li> Dear Elaan jewelry</li>
-                <li> DMK Naturals</li>
-                <li> dna jewelry designs</li>
-                <li> Elizabeth Lassing Jewelry</li>
-                <li> FIRST-N-TEN</li>
-                <li> For Claudia’s sayke</li>
-                <li> Goldenhandsdesign</li>
-                <li> Hooked Productions</li>
-                <li> Interstellar Love Craft</li>
-                <li> Jake’s Jammin Bow Ties</li>
-                <li> Jazz House Designs</li>
-                <li> Julie Draws</li>
-                <li> Kingsley Street Artisan Soaps</li>
-                <li> Knittin Caboodle</li>
-                <li> Kom Life</li>
-                <li> Lakeland Winery</li>
-                <li> Laurel O'Brien Jewelry</li>
-                <li> Leather & Lace</li>
-                <li> Libby Balm.</li>
-                <li> Marika Chew Watercolor Paintings</li>
-                <li> May and Mary</li>
-                <li> Mayor Potencial</li>
-                <li> 501C3</li>
-                <li> Metal Magic</li>
-                <li> Morning Mist Farms Soaps & Sundries</li>
-                <li> MV CERAMICS</li>
-                <li> Natalie Rae NY</li>
-                <li> Pair'adox Dice</li>
-                <li> Pam Gifford Pottery</li>
-                <li> Pickled Punks</li>
-                <li> Pm Press</li>
-                <li> potsbydjr</li>
-                <li> Puccoon Raccoon</li>
-                <li> Queen City Basement Designs</li>
-                <li> Rachel Feirman</li>
-                <li> Ragtrader Vintage</li>
-                <li> Rose Gottlieb Art & Jewelry</li>
-                <li> SamHain's Delights</li>
-                <li> Saratoga Peanut Butter Company</li>
-                <li> Southwest Expressions</li>
-                <li> Spirited servers</li>
-                <li> Suede Sauce Company</li>
-                <li> Sunny Days of Ithaca</li>
-                <li> Sunshine's Creative Designs</li>
-                <li> Tess Zizak Arts</li>
-                <li> The Hair Jeweler</li>
-                <li> The Pearl & Stone</li>
-                <li> Via's Cookies</li>
-                <li> Water of Whimsy</li>
-                <li> Wildflower Beads</li>
-                <li> Youth Entrepreneurship Market</li>
-                <li> Your CBD Store</li>
-                <li> and more!</li>
-            </ul>
-            <img src="images/craft-earrings.jpg" alt="earrings crafts">
-            <img id="wood" src="images/craft-wood.jpg" alt="wood crafts">
-            <h2>FAQ</h2>
-            <dl>
-                <dt> How much money should I bring?</dt>
-                <dd>Entry to the event is completely free! The amount of money you should bring is dependent on what, if
-                    anything, you wish to purchase at the festival. If you are driving, there is a $5 charge to park at
-                    the parking garage (You can find more parking information here ). If you plan to eat at the
-                    festival, you may also wish to bring at least $10. Prices of the various baked goods, produce, and
-                    crafts vary by vendor. Many of our vendors and their items can be found here.
-                </dd>
-                <dt> Can I pay with a credit card?</dt>
-                <dd>Most of our vendors accept credit cards, however, you should bring some cash in case a shop you are
-                    interested in does not accept them.
-                </dd>
-                <dt> Can I bring my dog?</dt>
-                <dd>Bringing a dog is strongly discouraged due to pets not being allowed on the Commons. Additionally,
-                    the event will be crowded and may be overwhelming for your furry friend, or it may be difficult to
-                    move through the crowds. Registered service animals are permitted.
-                </dd>
-                <dt> What should I wear?</dt>
-                <dd>If you are not familiar with the Ithaca area, it can get quite cold in the fall! Check the weather
-                    and bring layers.
-                </dd>
-                <dt> When is the best time to attend?</dt>
-                <dd>If you are looking to avoid the crowds, attending midday Friday is a good idea. However, many
-                    attendees find that the crowds on the weekend add to the energy and fun of the festival.
-                </dd>
-                <dt> Will there be alcohol?</dt>
-                <dd>Some vendors do sell alcohol (such as hard cider), so be sure to bring your ID if you are over 21.
-                    Many of these vendors also offer tastings.
-            </dl>
-        </article>
+            <div class="img-container">
+                <img src="./images/apple-harvest-map.svg" alt="">
+            </div>
+        </section>
+
+        <!-- Entertainment -->
+        <section class="grid py-5">
+            <div class="img-container">
+                <img src="./images/fire.jpg" alt="fire">
+            </div>
+
+            <div>
+                <h2 class="pb-3">Times, Dates, and Location </h2>
+                <p>
+                    Located at the Bernie Milton Pavilion fire performance <br /><br>
+                    <strong>Saturday, October 1, 2022 </strong><br />
+                    12:00pm - Rachel Beverly <br />
+                    1:00pm - Sunny Weather <br />
+                    2:00pm - Firefly Jazz Quartet <br />
+                    3:00pm - Janet Batch <br />
+                    4:00pm - Leo + The Maydays <br />
+                    5:00pm - Neo Project <br /><br>
+                    <strong>Sunday, October 2, 2022 </strong><br />
+                    12:00pm - Ageless Jazz Band <br />
+                    1:00pm - Yamatai <br />
+                    1:30pm - Fall Creek Brass Band <br />
+                    3:00pm - Viva Mayhem <br />
+                    4:00pm - Noon Fifteen <br />
+                    5:00pm - Ariel Arbisser <br />
+                </p>
+            </div>
+        </section>
+
+        <!-- Vendors -->
+        <section class="grid py-5">
+            <div>
+                <h2 class="pb-3">Vendors</h2>
+                <p>
+                    With over 100 vendors present at the festival, there are many opportunities to be introduced to the
+                    rich artisan and culinary community in Ithaca. Our food vendors feature apple-centric and other fall
+                    classics for you to taste, and the craft vendors offer homemade goods like soaps, jewelry,
+                    sculptures, clothing, and more! This is the perfect place to learn about and support Ithaca's small
+                    businesses that encompass the heart of the town.
+                </p>
+                <ul>
+                    <li>Schweigarts Sugar Shack</li>
+                    <li>Schoolyard Sugarbush</li>
+                    <li>A J Teeterfarm</li>
+                    <li>Littletree Orchards</li>
+                    <li>Creamcycle</li>
+                    <li>Maple River Syrup Company</li>
+                    <li>MacDonald Farms</li>
+                    <li>Cornell Society of Horticulture</li>
+                    <li>Laughing Goat Fiber Farm</li>
+                    <li>Robbie’s Produce</li>
+                    <li>Picaflor Farm</li>
+                    <li>Little Farm Bakery</li>
+                    <li>Little Grey Bakery</li>
+                    <li>Mojo Hot Sauce</li>
+                </ul>
+            </div>
+
+            <div class="img-container">
+                <img src="./images/blueberry-stand.jpg" alt="">
+            </div>
+        </section>
+
+        <!-- Cider Houses & Wineries -->
+        <section class="grid py-5">
+            <div class="img-container">
+                <img src="./images/apple-cider-jugs.jpg" alt="">
+            </div>
+
+            <div>
+                <h2 class="pb-3">Cider Houses & Wineries</h2>
+                <ul>
+                    <li>Blackduck Cidery</li>
+                    <li>Redbyrd Orchard</li>
+                    <li>South Hill Cider</li>
+                    <li>New Leaf Cider Co.</li>
+                    <li>Thousand Islands Winery</li>
+                    <li>Finger Lakes Cider House</li>
+                    <li>New York Cider Company</li>
+                    <li>Eve's Cidery</li>
+                    <li>Ashley Lynn Winery</li>
+                </ul>
+            </div>
+
+        </section>
+
+        <!-- Food Vendors -->
+        <section class="grid py-5">
+            <div>
+                <h2 class="pb-3">Food Vendors</h2>
+                <ul>
+                    <li>Macarollin</li>
+                    <li>Mr. Squeeze Lemonade</li>
+                    <li>Kettle Corn Shoppe</li>
+                    <li>SPM Empanadas</li>
+                    <li>Fittnell Barbeque</li>
+                    <li>Tibetan Momo Bar</li>
+                    <li>Travelers Kitchen</li>
+                    <li>Asempe Kitchen</li>
+                    <li>Vail Bros inc</li>
+                    <li>On The Street Pitas</li>
+                    <li>Silo Food Truck</li>
+                    <li>B&B Kettle Korn</li>
+                    <li>Robbie’s Produce</li>
+                    <li>PDRS Catering</li>
+                    <li>Trini Style</li>
+                    <li>Coltivare</li>
+                    <li>She Messy Tacos</li>
+                    <li>Adam Grill</li>
+                    <li>Thai Basil</li>
+                    <li>Zocalo</li>
+                    <li>Yxi's Arepas & Gordito</li>
+                    <li>Solaz</li>
+                    <li>Monks on the Commons</li>
+                    <li>Smash Bros World Foods</li>
+                    <li>The Yellow Deli</li>
+                    <li>Thai Palace</li>
+                    <li>Lou's Covert Kitchen</li>
+                    <li>Playland Amusements Concessions</li>
+                </ul>
+            </div>
+
+            <div class="img-container">
+                <img src="./images/people-eating-apples.jpg" alt="">
+            </div>
+        </section>
+
+        <!-- Crafters -->
+        <section class="grid py-5">
+            <div class="img-container">
+                <img src="./images/craft-earrings.jpg" alt="">
+            </div>
+
+            <div>
+                <h2 class="pb-3">Crafters</h2>
+                <ul>
+                    <li>A&K Creations</li>
+                    <li>Alchemist's Whim</li>
+                    <li>All Forked Up Art</li>
+                    <li>Anna Pausch Studios</li>
+                    <li>Art Of Yen Ospina</li>
+                    <li>Ashley Messana Jewelry</li>
+                    <li>Bags That Bite</li>
+                    <li>Black Rabbit Studio</li>
+                    <li>Blue Toucan Studios</li>
+                    <li>Fairy Doors</li>
+                    <li>Bon Fire Craft</li>
+                    <li>CHOP SHOP STORE</li>
+                    <li>CM Goodenbury Photography</li>
+                    <li>Crescent Moon studio</li>
+                    <li>Daisy Hollow Farm</li>
+                    <li>Dale Bowers Art</li>
+                    <li>Dan Bingham Art</li>
+                    <li>Dave’s Art Den</li>
+                    <li>Dear Elaan jewelry</li>
+                    <li>DMK Naturals</li>
+                    <li>dna jewelry designs</li>
+                    <li>Elizabeth Lassing Jewelry</li>
+                    <li>FIRST-N-TEN</li>
+                    <li>For Claudia’s sayke</li>
+                    <li>Goldenhandsdesign</li>
+                    <li>Hooked Productions</li>
+                    <li>Interstellar Love Craft</li>
+                    <li>Jake’s Jammin Bow Ties</li>
+                    <li>Jazz House Designs</li>
+                    <li>Julie Draws</li>
+                    <li>Kingsley Street Artisan Soaps</li>
+                    <li>Knittin Caboodle</li>
+                    <li>Kom Life</li>
+                    <li>Lakeland Winery</li>
+                    <li>Laurel O'Brien Jewelry</li>
+                    <li>Leather & Lace</li>
+                    <li>Libby Balm.</li>
+                    <li>Marika Chew Watercolor Paintings</li>
+                    <li>May and Mary</li>
+                    <li>Mayor Potencial</li>
+                    <li>501C3</li>
+                    <li>Metal Magic</li>
+                    <li>Morning Mist Farms Soaps & Sundries</li>
+                    <li>MV CERAMICS</li>
+                    <li>Natalie Rae NY</li>
+                    <li>Pair'adox Dice</li>
+                    <li>Pam Gifford Pottery</li>
+                    <li>Pickled Punks</li>
+                    <li>Pm Press</li>
+                    <li>potsbydjr</li>
+                    <li>Puccoon Raccoon</li>
+                    <li>Queen City Basement Designs</li>
+                    <li>Rachel Feirman</li>
+                    <li>Ragtrader Vintage</li>
+                    <li>Rose Gottlieb Art & Jewelry</li>
+                    <li>SamHain's Delights</li>
+                    <li>Saratoga Peanut Butter Company</li>
+                    <li>Southwest Expressions</li>
+                    <li>Spirited servers</li>
+                    <li>Suede Sauce Company</li>
+                    <li>Sunny Days of Ithaca</li>
+                    <li>Sunshine's Creative Designs</li>
+                    <li>Tess Zizak Arts</li>
+                    <li>The Hair Jeweler</li>
+                    <li>The Pearl & Stone</li>
+                    <li>Via's Cookies</li>
+                    <li>Water of Whimsy</li>
+                    <li>Wildflower Beads</li>
+                    <li>Youth Entrepreneurship Market</li>
+                    <li>Your CBD Store</li>
+                    <li>and more!</li>
+                </ul>
+            </div>
+
+        </section>
     </main>
 
+    <!-- Personal JS -->
+    <script src="./index.js"></script>
 
-
+    <!-- Bootstrap Javascript for Accordian & Carousel -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
