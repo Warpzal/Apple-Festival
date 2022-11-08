@@ -14,6 +14,7 @@
 
 body {
     background: #f3f3f3;
+    font-family: Arial, Helvetica, sans-serif, sans-serif;
 }
 
 main {
@@ -23,7 +24,7 @@ main {
 }
 
 ul {
-    list-style-image: url('../images/apple-icon.webp');
+    list-style-image: url('../images/apple-icon.webp') !important;
     ul {
         list-style-image: none;
     }
@@ -190,4 +191,46 @@ h6 {
 
 #vineyard {
     max-height: 400px;
+}
+
+// IndexHTML
+
+// About
+.about {
+    &__heading {
+        font-size: 3rem;
+        font-weight: bold;
+        padding-top: 50px;
+        padding-bottom: 20px;
+    }
+}
+
+// Utility Classes
+.pb-2 {
+    padding-bottom: 20px;
+}
+
+.pb-3 {
+    padding-bottom: 30px;
+}
+
+.pb-5 {
+    padding-bottom: 50px;
+}
+
+.pt-2 {
+    padding-top: 20px;
+}
+
+.pt-3 {
+    padding-top: 30px;
+}
+
+.pt-5 {
+    padding-top: 50px;
+}
+
+.py-5 {
+    padding-top: 50px;
+    padding-bottom: 50px;
 }
