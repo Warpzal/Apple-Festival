@@ -12,9 +12,13 @@
     <!-- Personal CSS -->
     <link rel="stylesheet" href="./styles/style.css">
 
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <!-- Jquery Libarary -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"
+        integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!-- Personal Javascript -->
+    <script src="./script.js" defer></script>
 </head>
 
 <body>
@@ -24,148 +28,105 @@
         <h1 class="header__heading">Ithaca Apple Harvest Festival </h1>
     </header>
 
-    <nav class="navbar navbar-expand-lg bg-light">
-        <div class="container-fluid d-flex justify-content-center">
-
-            <!-- Hamburger Menu -->
-            <button class="navbar-toggler " type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-
-            <!-- Navbar Items -->
-            <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="./index.html">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="./activities.html">Activities</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="./transportation.html">Transportation</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active" href="./faq.html">FAQ</a>
-                    </li>
-                </ul>
-            </div>
+    <nav class="navbar nav">
+        <!-- Hamburger Menu -->
+        <div class="hamburger-menu-container">
+            <img class="hamburger-menu" src="./images/hamburger-menu.svg" alt="menu" width="40px">
         </div>
+        <ul class="nav__items">
+            <li class="nav__item">
+                <a class="nav__link" href="./index.html">Home</a>
+            </li>
+            <li class="nav__item">
+                <a class="nav__link" href="./activities.html">Activities</a>
+            </li>
+            <li class="nav__item">
+                <a class="nav__link" href="./transportation.html">Transportation</a>
+            </li>
+            <li class="nav__item">
+                <a class="nav__link active" href="./faq.html">FAQ</a>
+            </li>
+        </ul>
     </nav>
 
     <!-- FAQ -->
     <main>
         <section class="faq">
             <h2 class="py-5 pb-3">Frequently Asked Questions</h2>
-            <div class="accordion" id="accordionExample">
 
-                <div class="accordion-item">
-                    <h2 class="accordion-header" id="headingOne">
-                        <button class="accordion-button" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                            How much money should I bring?
-                        </button>
-                    </h2>
-                    <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
-                        data-bs-parent="#accordionExample">
-                        <div class="accordion-body">
-                            Entry to the event is completely free! The amount of money you should bring is dependent on
-                            what, if anything, you wish to purchase at the festival. If you are driving, there is a $5
-                            charge to park at the parking garage (You can find more parking information here ). If you
-                            plan
-                            to eat at the festival, you may also wish to bring at least $10. Prices of the various baked
-                            goods, produce, and crafts vary by vendor. Many of our vendors and their items can be found
-                            here.
-                        </div>
+            <div class="accordion">
+                <div class="accordion__item">
+                    <div class="accordion__outside">
+                        How much money should I bring?
+                    </div>
+                    <div class="accordion__inside">
+                        Entry to the event is completely free! The amount of money you should bring is dependent on
+                        what, if anything, you wish to purchase at the festival. If you are driving, there is a $5
+                        charge to park at the parking garage (You can find more parking information here ). If you
+                        plan
+                        to eat at the festival, you may also wish to bring at least $10. Prices of the various baked
+                        goods, produce, and crafts vary by vendor. Many of our vendors and their items can be found
+                        here.
                     </div>
                 </div>
 
-                <div class="accordion-item">
-                    <h2 class="accordion-header" id="headingTwo">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                            Can I pay with a credit card?
-                        </button>
-                    </h2>
-                    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
-                        data-bs-parent="#accordionExample">
-                        <div class="accordion-body">
-                            Most of our vendors accept credit cards, however, you should bring some cash in case a shop
-                            you
-                            are interested in does not accept them.
-                        </div>
+
+
+                <div class="accordion__item">
+                    <div class="accordion__outside accordion__outside--open">
+                        Can I pay with a credit card?
+                    </div>
+                    <div class="accordion__inside">
+                        Most of our vendors accept credit cards, however, you should bring some cash in case a shop
+                        you
+                        are interested in does not accept them.
                     </div>
                 </div>
 
-                <div class="accordion-item">
-                    <h2 class="accordion-header" id="headingThree">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                            Can I bring my dog?
-                        </button>
-                    </h2>
-                    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
-                        data-bs-parent="#accordionExample">
-                        <div class="accordion-body">
-                            Bringing a dog is strongly discouraged due to pets not being allowed on the Commons.
-                            Additionally, the event will be crowded and may be overwhelming for your furry friend, or it
-                            may
-                            be difficult to move through the crowds. Registered service animals are permitted.
-                        </div>
+                <div class="accordion__item">
+                    <div class="accordion__outside">
+                        Can I bring my dog?
+                    </div>
+                    <div class="accordion__inside">
+                        Bringing a dog is strongly discouraged due to pets not being allowed on the Commons.
+                        Additionally, the event will be crowded and may be overwhelming for your furry friend, or it
+                        may
+                        be difficult to move through the crowds. Registered service animals are permitted.
                     </div>
                 </div>
 
-                <div class="accordion-item">
-                    <h2 class="accordion-header" id="headingFour">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-                            What should I wear?
-                        </button>
-                    </h2>
-                    <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
-                        data-bs-parent="#accordionExample">
-                        <div class="accordion-body">
-                            If you are not familiar with the Ithaca area, it can get quite cold in the fall! Check the
-                            weather and bring layers.
-                        </div>
+                <div class="accordion__item">
+                    <div class="accordion__outside">
+                        What should I wear?
+                    </div>
+                    <div class="accordion__inside">
+                        If you are not familiar with the Ithaca area, it can get quite cold in the fall! Check the
+                        weather and bring layers.
                     </div>
                 </div>
 
-                <div class="accordion-item">
-                    <h2 class="accordion-header" id="headingFive">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
-                            When is the best time to attend?
-                        </button>
-                    </h2>
-                    <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive"
-                        data-bs-parent="#accordionExample">
-                        <div class="accordion-body">
-                            If you are looking to avoid the crowds, attending midday Friday is a good idea. However,
-                            many
-                            attendees find that the crowds on the weekend add to the energy and fun of the festival.
-                        </div>
+                <div class="accordion__item">
+                    <div class="accordion__outside">
+                        When is the best time to attend?
+                    </div>
+                    <div class="accordion__inside">
+                        If you are looking to avoid the crowds, attending midday Friday is a good idea. However,
+                        many
+                        attendees find that the crowds on the weekend add to the energy and fun of the festival.
                     </div>
                 </div>
 
-                <div class="accordion-item">
-                    <h2 class="accordion-header" id="headingSix">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
-                            Will there be alcohol?
-                        </button>
-                    </h2>
-                    <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix"
-                        data-bs-parent="#accordionExample">
-                        <div class="accordion-body">
-                            Some vendors do sell alcohol (such as hard cider), so be sure to bring your ID if you are
-                            over
-                            21. Many of these vendors also offer tastings.
-                        </div>
+                <div class="accordion__item">
+                    <div class="accordion__outside">
+                        Will there be alcohol?
+                    </div>
+                    <div class="accordion__inside">
+                        Some vendors do sell alcohol (such as hard cider), so be sure to bring your ID if you are
+                        over
+                        21. Many of these vendors also offer tastings.
                     </div>
                 </div>
             </div>
-
         </section>
     </main>
 

@@ -1,0 +1,243 @@
+@import url('https://fonts.googleapis.com/css2?family=Poor+Story&display=swap');
+
+:root {
+    --color-primary: hsl(350, 81%, 42%);
+    --color-secondary: hsl(350, 81%, 82%);
+    --spacer-h2: 15vh;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #f3f3f3;
+    font-family: Arial, Helvetica, sans-serif, sans-serif;
+}
+
+main {
+    padding: 30px;
+    margin: 0 auto;
+    max-width: 1600px;
+}
+
+p,
+li {
+    line-height: 30px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Poor Story', cursive;
+    font-weight: bolder;
+}
+
+.accordion-header {
+    font-family: sans-serif;
+}
+
+.header::after {
+    content: '';
+    background: rgba(0, 0, 0, 0.6);
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+}
+
+.header__heading {
+    color: white;
+    filter: drop-shadow(0 1px 1px rgb(0 0 0 / 0.05));
+}
+
+.header__logo {
+    height: 80px;
+    padding-right: 20px;
+}
+
+.header {
+    position: relative;
+    isolation: isolate;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    background-color: white;
+    background: linear-gradient(to right, var(--color-primary), #dfe87a);
+    background-image: url('../images/apple-icon.webp');
+    background-size: 1%;
+    background-repeat: repeat;
+}
+
+.about {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    h2 {
+        font-size: 32px;
+    }
+
+    p {
+        font-size: 18px;
+    }
+}
+
+.carousel {
+    width: 100%;
+    height: 600px;
+    margin: 0 auto;
+    overflow: hidden;
+
+    &-inner,
+    &-item {
+        width: 100%;
+        height: 100%;
+    }
+
+    &-item img {
+        border-radius: 5px;
+        width: 100%;
+        height: 100%;
+        object-position: center;
+        object-fit: cover;
+    }
+}
+
+.navbar {
+    position: sticky !important;
+    top: -1px;
+    z-index: 1000;
+    box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+}
+
+.navbar.is-pinned {
+    background: rgba(255, 255, 255, 0.95) !important;
+}
+
+.grid {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+
+    @media (min-width: 800px) {
+        flex-direction: row;
+        grid-template-columns: 1fr 1fr;
+
+        * {
+            flex-basis: 50%;
+        }
+    }
+
+    div:not(.img-container):not(.hiking) {
+        @media (min-width: 800px) {
+            max-height: 670px;
+            overflow-y: auto;
+        }
+    }
+
+    .img-container {
+        width: 100%;
+        height: 100%;
+        flex-basis: 50%;
+        order: -1;
+        border-radius: 5px;
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center;
+            border-radius: inherit;
+        }
+
+        @media (min-width: 800px) {
+            order: initial;
+        }
+    }
+}
+
+#vineyard {
+    max-height: 400px;
+}
+
+// IndexHTML
+
+// About
+.about {
+    &__heading {
+        font-size: 3rem;
+        font-weight: bold;
+        padding-top: 50px;
+        padding-bottom: 20px;
+    }
+}
+
+// - Utility-
+//  Referring to any CSS class that is used across all pages agnostic to page, and section (ie: header, nav) those are GLOBALS
+
+// Layout
+.pb-2 {
+    padding-bottom: 20px;
+}
+
+.pb-3 {
+    padding-bottom: 30px;
+}
+
+.pb-5 {
+    padding-bottom: 50px;
+}
+
+.pt-2 {
+    padding-top: 20px;
+}
+
+.pt-3 {
+    padding-top: 30px;
+}
+
+.pt-5 {
+    padding-top: 50px;
+}
+
+.py-5 {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+/* Misc. */
+.apple-list {
+    list-style-image: url('../images/apple-icon.webp') !important;
+    padding-left: 20px;
+}
+
+
+/* Scroll Bar */
+/* width */
+::-webkit-scrollbar {
+    width: 6px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey;
+    border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: var(--color-primary);
+    border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #b30000;
+}

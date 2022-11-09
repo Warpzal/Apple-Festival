@@ -11,9 +11,14 @@
     <!-- Personal CSS -->
     <link rel="stylesheet" href="./styles/style.css">
 
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <!-- Jquery Libarary -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"
+        integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!-- Personal JS -->
+    <script src="./script.js" defer></script>
+
 </head>
 
 <body>
@@ -23,34 +28,27 @@
         <h1 class="header__heading">Ithaca Apple Harvest Festival </h1>
     </header>
 
-    <nav class="navbar navbar-expand-lg bg-light">
-        <div class="container-fluid d-flex justify-content-center">
-
-            <!-- Hamburger Menu -->
-            <button class="navbar-toggler " type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-
-            <!-- Navbar Items -->
-            <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="./index.html">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="./activities.html">Activities</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active" href="./transportation.html">Transportation</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="./faq.html">FAQ</a>
-                    </li>
-                </ul>
-            </div>
+    <nav class="navbar nav">
+        <!-- Hamburger Menu -->
+        <div class="hamburger-menu-container">
+            <img class="hamburger-menu" src="./images/hamburger-menu.svg" alt="menu" width="40px">
         </div>
+        <ul class="nav__items">
+            <li class="nav__item">
+                <a class="nav__link" href="./index.html">Home</a>
+            </li>
+            <li class="nav__item">
+                <a class="nav__link" href="./activities.html">Activities</a>
+            </li>
+            <li class="nav__item">
+                <a class="nav__link active" href="./transportation.html">Transportation</a>
+            </li>
+            <li class="nav__item">
+                <a class="nav__link" href="./faq.html">FAQ</a>
+            </li>
+        </ul>
     </nav>
+
 
     <main>
         <h2 class="py-5 pb-3">Parking and Directions</h2>
@@ -71,520 +69,324 @@
             <h2 class="py-5 pb-3">TCAT Fall 2022 Schedules</h2>
             <p>Effective August 22, 2022 through January 22, 2023</p>
 
-            <div class="accordion" id="accordionExample">
-                <div class="accordion-item">
-                    <h2 class="accordion-header" id="headingOne">
-                        <button class="accordion-button" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                            Route 10: Mon-Fri
-                        </button>
-                    </h2>
-                    <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
-                        data-bs-parent="#accordionExample">
-                        <div class="accordion-body">
-                            <ul>
-                                <li>Ithaca College – Commons</li>
-                                <li>Also Serving: College Circle Apts., Challenge, South Hill Business Park, South Hill
-                                    Elementary,
-                                    Longview</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
+            <div class="accordion">
 
-                <div class="accordion-item">
-                    <h2 class="accordion-header" id="headingTwo">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                            Route 11: Everyday
-                        </button>
-                    </h2>
-                    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
-                        data-bs-parent="#accordionExample">
-                        <div class="accordion-body">
-                            <ul>
-                                <li>Ithaca College – Commons</li>
-                                <li>Also Serving: College Circle Apts., Challenge, South Hill Business Park, South Hill
-                                    Elementary,
-                                    Longview</li>
-                            </ul>
-                        </div>
+                <div class="accordion__item">
+                    <div class="accordion__outside">
+                        Route 10: Mon-Fri
                     </div>
-                </div>
-
-                <div class="accordion-item">
-                    <h2 class="accordion-header" id="headingThree">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                            Route 13: Everyday
-                        </button>
-                    </h2>
-                    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
-                        data-bs-parent="#accordionExample">
-                        <div class="accordion-body">
-                            <ul>
-                                <li>Fall Creek</li>
-                                <li>Also Serving: Commons, DMV, Aldi, Ithaca High School, Lake St., Hancock St., Cayuga
-                                    St., Stewart
-                                    Park</li>
-                                <li>Weekdays Only: and Shops at Ithaca Mall</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="accordion-item">
-                    <h2 class="accordion-header" id="headingFour">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-                            Route 13S: Everyday
-                        </button>
-                    </h2>
-                    <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
-                        data-bs-parent="#accordionExample">
-                        <div class="accordion-body">
-                            <ul>
-                                <li>Fall Creek Shopper</li>
-                                <li>Also Serving: Commons, Aldi, DMV, Hancock St., Cascadilla @ Fulton (near new
-                                    Greestar Co+op
-                                    location)</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="accordion-item">
-                    <h2 class="accordion-header" id="headingFive">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
-                            Route 14S: Everyday
-                        </button>
-                    </h2>
-                    <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive"
-                        data-bs-parent="#accordionExample">
-                        <div class="accordion-body">
-                            <ul>
-                                <li>West Hill Shopper</li>
-                                <li>Also Serving: Overlook Apts., Cayuga Meadows, Linderman Creek Apts., Conifer Village
-                                    Apts., West
-                                    Village, Chestnut Hill Apartments, Wegman’s, Tops, Walmart, Trader Joe’s</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="accordion-item">
-                    <h2 class="accordion-header" id="headingSix">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
-                            Route 15: Everyday
-                        </button>
-                    </h2>
-                    <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix"
-                        data-bs-parent="#accordionExample">
-                        <div class="accordion-body">
-                            <ul>
-                                <li>Southside Shopper</li>
-                                <li>Also Serving: Commons, McGraw House, Titus Towers, Ithaca Plaza, Wegman’s, Tops,
-                                    Walmart, Trader
-                                    Joe’s</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="accordion-item">
-                    <h2 class="accordion-header" id="headingSeven">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
-                            Route 17: Everyday
-                        </button>
-                    </h2>
-                    <div id="collapseSeven" class="accordion-collapse collapse" aria-labelledby="headingSeven"
-                        data-bs-parent="#accordionExample">
-                        <div class="accordion-body">
-                            <ul>
-                                <li>Fall Creek – Commons</li>
-                                <li>Also Serving: TCAT Offices, W. Lincoln St., Cayuga St.</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="accordion-item">
-                    <h2 class="accordion-header" id="headingEight">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
-                            Route 20: Everyday
-                        </button>
-                    </h2>
-                    <div id="collapseEight" class="accordion-collapse collapse" aria-labelledby="headingEight"
-                        data-bs-parent="#accordionExample">
-                        <div class="accordion-body">
-                            <ul>
-                                <li>Enfield – Commons
-                                <li>Also Serving: Greenstar, Eco Village, Agway. Select trips serve Cornell West Campus.
-                                </li>
-                                <li>Saturday & Sunday: First trip is demand hiker drop-off at Bock Harvey Nature
-                                    Preserve or the
-                                    entrance to Upper Treman State Park. Route 67 picks up at the Lower Treman Stop
-                                    (Elmira Rd @
-                                    Enfield Creek Bridge), allowing for a through hike.</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="accordion-item">
-                    <h2 class="accordion-header" id="headingNine">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#collapseNine" aria-expanded="false" aria-controls="collapseNine">
-                            Route 21: Everyday
-                        </button>
-                    </h2>
-                    <div id="collapseNine" class="accordion-collapse collapse" aria-labelledby="headingNine"
-                        data-bs-parent="#accordionExample">
-                        <div class="accordion-body">
-                            <ul>
-                                <li>Trumansburg – Commons</li>
-                                <li>Also Serving: Ulysses, Jacksonville, GreenStar, Agway, Cornell, Commons</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="accordion-item">
-                    <h2 class="accordion-header" id="headingTen">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#collapseTen" aria-expanded="false" aria-controls="collapseTen">
-                            Route 30: Everyday
-                        </button>
-                    </h2>
-                    <div id="collapseTen" class="accordion-collapse collapse" aria-labelledby="headingTen"
-                        data-bs-parent="#accordionExample">
-                        <div class="accordion-body">
-                            <ul>
-                                <li>Shops at Ithaca Mall – Cornell – Commons</li>
-                                <li>Also Serving: Cornell, Community Corners, Kendal, Tops (Lansing), YMCA</li>
-                                <li>Detour: Partial Detour in Collegetown</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="accordion-item">
-                    <h2 class="accordion-header" id="headingEleven">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#collapseEleven" aria-expanded="false" aria-controls="collapseEleven">
-                            Route 31 / 41: Mon-Fri
-                        </button>
-                    </h2>
-                    <div id="collapseEleven" class="accordion-collapse collapse" aria-labelledby="headingEleven"
-                        data-bs-parent="#accordionExample">
-                        <div class="accordion-body">
-                            <ul>
-                                <li>Etna – Cornell – Winston Court</li>
-                                <li>Also Serving: Winston Court, Community Corners, Etna Rd., Highland, The Parkway,
-                                    Hanshaw Rd.,
-                                    Guthrie, Lower Creek Rd., Creekwood Apts., Hanshaw VIllage, Sapsucker Woods, Lab of
-                                    Ornithology,
-                                </li>
-                                <li>See route 77 Tconnect for weekend service to Winston Court See route 32 for demand
-                                    service to
-                                    Convenient Care</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="accordion-item">
-                    <h2 class="accordion-header" id="headingTwelve">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#collapseTwelve" aria-expanded="false" aria-controls="collapseTwelve">
-                            Route 32: Everyday
-                        </button>
-                    </h2>
-                    <div id="collapseTwelve" class="accordion-collapse collapse" aria-labelledby="headingTwelve"
-                        data-bs-parent="#accordionExample">
-                        <div class="accordion-body">
-                            <ul>
-                                <li>Airport – Cornell – Commons</li>
-                                <li>Also Serving: Cornell Business Park, Langmuir Lab, Northwood Apts., Gaslight
-                                    Village, Uptown
-                                    Village, University Park, Convenient Care, Community Corners, Statler Hall, Tompkins
-                                    County
-                                    Health Department No service to Collegetown</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="accordion-item">
-                    <h2 class="accordion-header" id="headingThirteen">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#collapseThirteen" aria-expanded="false" aria-controls="collapseThirteen">
-                            Route 36: Mon-Fri
-                        </button>
-                    </h2>
-                    <div id="collapseThirteen" class="accordion-collapse collapse" aria-labelledby="headingThirteen"
-                        data-bs-parent="#accordionExample">
-                        <div class="accordion-body">
-                            <ul>
-                                <li>Lansing School</li>
-                                <li>Also Serving: Lansing H.S., Cornell, Commons, Ithaca H.S., Cayuga Mall, Shops at
-                                    Ithaca Mall
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="accordion-item">
-                    <h2 class="accordion-header" id="headingFourteen">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#collapseFourteen" aria-expanded="false" aria-controls="collapseFourteen">
-                            Route 37: Mon-Fri
-                        </button>
-                    </h2>
-                    <div id="collapseFourteen" class="accordion-collapse collapse" aria-labelledby="headingFourteen"
-                        data-bs-parent="#accordionExample">
-                        <div class="accordion-body">
-                            <ul>
-                                <li>Lansing Town Hall</li>
-                                <li>Also Serving: Lansing Town Hall, Village Solars, Warren @ Convenient Care,
-                                    Cornell–Tower Road,
-                                    Sage Hall, Commons.</li>
-                                <li>See route 77 Tconnect for weekend service to Warren Rd. and Village Solars</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="accordion-item">
-                    <h2 class="accordion-header" id="headingFifteen">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#collapseFifteen" aria-expanded="false" aria-controls="collapseFifteen">
-                            Route 40: Everyday
-                        </button>
-                    </h2>
-                    <div id="collapseFifteen" class="accordion-collapse collapse" aria-labelledby="headingFifteen"
-                        data-bs-parent="#accordionExample">
-                        <div class="accordion-body">
-                            <ul>
-                                <li>Freeville – Groton</li>
-                                <li>Also Serving: Groton H.S., Varna, Etna, Dairy Bar, Sage Hall, Ithaca Commons</li>
-                                <li>See Route 43 for additional trips</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="accordion-item">
-                    <h2 class="accordion-header" id="headingSixteen">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#collapseSixteen" aria-expanded="false" aria-controls="collapseSixteen">
-                            Route 41: See route 31 /41
-                        </button>
-                    </h2>
-                    <div id="collapseSixteen" class="accordion-collapse collapse" aria-labelledby="headingSixteen"
-                        data-bs-parent="#accordionExample">
-                        <div class="accordion-body">
-                            Route 43: Everyday
-                            <ul>
-                                <li>Dryden – TC3 (Select trips serve Freeville and Groton)</li>
-                                <li>Also Serving: South Dryden, Dryden Village, Varna, Vet School, Sage Hall, Commons.
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="accordion-item">
-                    <h2 class="accordion-header" id="headingSeventeen">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#collapseSeventeen" aria-expanded="false" aria-controls="collapseSeventeen">
-                            Route 51: Everyday
-                        </button>
-                    </h2>
-                    <div id="collapseSeventeen" class="accordion-collapse collapse" aria-labelledby="headingSeventeen"
-                        data-bs-parent="#accordionExample">
-                        <div class="accordion-body">
-                            <ul>
-                                <li>Eastern Heights – Cornell – Commons</li>
-                                <li>Also Serving: Commonland, Honness Lane, East Hill Plaza, Tower Road, Sage Hall,
-                                    Vet School.
-                                    Maplewood Park Apts. (No service to Collegetown due to construction on College
-                                    Ave.)</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="accordion-item">
-                    <h2 class="accordion-header" id="headingEighteen">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#collapseEighteen" aria-expanded="false" aria-controls="collapseEighteen">
-                            Route 52: Everyday
-                        </button>
-                    </h2>
-                    <div id="collapseEighteen" class="accordion-collapse collapse" aria-labelledby="headingEighteen"
-                        data-bs-parent="#accordionExample">
-                        <div class="accordion-body">
-                            <ul>
-                                <li>Caroline – Commons</li>
-                                <li>Also Serving: Slaterville Springs, Brooktondale, Bethel Grove, Cornell, Vet School,
-                                    Sage Hall.</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="accordion-item">
-                    <h2 class="accordion-header" id="headingNineteen">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#collapseNineteen" aria-expanded="false" aria-controls="collapseNineteen">
-                            Route 53: Mon-Fri
-                        </button>
-                    </h2>
-                    <div id="collapseNineteen" class="accordion-collapse collapse" aria-labelledby="headingNineteen"
-                        data-bs-parent="#accordionExample">
-                        <div class="accordion-body">
-                            <ul>
-                                <li>Ellis Hollow – Varna</li>
-                                <li>Also Serving: The Commons, Cornell–Tower Road, Turkey Hill Rd., Ellis Hollow Rd.
-                                </li>
-                                <li>See route 52 for service to Brooktondale</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="accordion-item">
-                    <h2 class="accordion-header" id="headingTwenty">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#collapseTwenty" aria-expanded="false" aria-controls="collapseTwenty">
-                            Route 65: Mon-Fri + Saturday
-                        </button>
-                    </h2>
-                    <div id="collapseTwenty" class="accordion-collapse collapse" aria-labelledby="headingTwenty"
-                        data-bs-parent="#accordionExample">
-                        <div class="accordion-body">
-                            <ul>
-                                <li>Danby</li>
-                                <li>Also Serving: Hillview Terrace Mobile Home Park, Danby Town Hall Park & Ride, Dotson
-                                    Park, Ithaca Commons, Cornell–Tower Road</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="accordion-item">
-                    <h2 class="accordion-header" id="headingTwentyone">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#collapseTwentyone" aria-expanded="false" aria-controls="collapseTwentyone">
-                            Route 67: Everyday
-                        </button>
-                    </h2>
-                    <div id="collapseTwentyone" class="accordion-collapse collapse" aria-labelledby="headingTwentyone"
-                        data-bs-parent="#accordionExample">
-                        <div class="accordion-body">
-                            <ul>
-                                <li>Newfield</li>
-                                <li>Also Serving: Sunny’s, Meadowbrook, Valley Manor, Newfield Town Hall, Newfield
-                                    Covered Bridge, Newfield Schools, Newfield Garden Apts, Treman State Park, Elmira
-                                    Road, South Meadow, Clinton West Plaza, Ithaca Commons, Cornell–Tower Rd.</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="accordion-item">
-                    <h2 class="accordion-header" id="headingTwentytwo">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#collapseTwentytwo" aria-expanded="false" aria-controls="collapseTwentytwo">
-                            Route 81: Mon-Fri
-                        </button>
-                    </h2>
-                    <div id="collapseTwentytwo" class="accordion-collapse collapse" aria-labelledby="headingTwentytwo"
-                        data-bs-parent="#accordionExample">
-                        <div class="accordion-body">
-                            <ul>
-                                <li>Cornell Campus Service</li>
-                                <li>Also Serving: A Lot, Balch Hall, Hasbrouck Apts., Helen Newman Hall, Cradit Farm
-                                    Dr., Tower Rd., Vet School, BTI</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="accordion-item">
-                    <h2 class="accordion-header" id="headingTwentythree">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#collapseTwentythree" aria-expanded="false"
-                            aria-controls="collapseTwentythree">
-                            Route 83: Mon-Fri
-                        </button>
-                    </h2>
-                    <div id="collapseTwentythree" class="accordion-collapse collapse"
-                        aria-labelledby="headingTwentythree" data-bs-parent="#accordionExample">
-                        <div class="accordion-body">
-                            <ul>
-                                <li>Cornell Campus Service</li>
-                                <li>Also Serving: West Campus, Feeney Way, Sage Hall, Balch Hall, Highland Rd.,
-                                    Ridgewood Rd.</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="accordion-item">
-                    <h2 class="accordion-header" id="headingTwentyFour">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#collapseTwentyFour" aria-expanded="false"
-                            aria-controls="collapseTwentyFour">
-                            Route 90: Everyday
-                        </button>
-                    </h2>
-                    <div id="collapseTwentyFour" class="accordion-collapse collapse" aria-labelledby="headingTwentyFour"
-                        data-bs-parent="#accordionExample">
-                        <div class="accordion-body">
-                            <ul>
-                                <li>Cornell Campus / Ithaca Commons Night Service</li>
-                                <li>Also Serving: Ithaca Commons, Collegetown, Statler Hall, North Campus, RPCC,
-                                    Hasbrouck, Appel Commons, Sage Hall, Schwartz CPA</li>
-                            </ul>
-                        </div>
+                    <div class="accordion__inside">
+                        <ul>
+                            <li>Cornell – Commons Shuttle</li>
+                            <li>Also Serving: Sage Hall, Boldt Hall, Milstein Hall, Goldwin Smith Hall, Stewart Ave.
+                            </li>
+                        </ul>
                     </div>
                 </div>
 
 
-                <div class="accordion-item">
-                    <h2 class="accordion-header" id="headingTwentyFour">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#collapseTwentyFour" aria-expanded="false"
-                            aria-controls="collapseTwentyFour">
-                            Route 92: Everyday
-                        </button>
-                    </h2>
-                    <div id="collapseTwentyFour" class="accordion-collapse collapse" aria-labelledby="headingTwentyFour"
-                        data-bs-parent="#accordionExample">
-                        <div class="accordion-body">
-                            <ul>
-                                <li>Cornell Campus Service</li>
-                                <li>Also Serving: West Campus, Collegetown, Schwartz CPA, Cradit Farm Drive, Appel
-                                    Commons, Helen Newman Hall, Hasbrouck Apts., North Campus</li>
-                            </ul>
-                        </div>
+                <div class="accordion__item">
+                    <div class="accordion__outside accordion__outside--open">
+                        Route 11: Everyday
+                    </div>
+                    <div class="accordion__inside">
+                        <ul>
+                            <li>Ithaca College – Commons</li>
+                            <li>Also Serving: College Circle Apts., Challenge, South Hill Business Park, South Hill
+                                Elementary, Longview</li>
+                        </ul>
                     </div>
                 </div>
+
+                <div class="accordion__item">
+                    <div class="accordion__outside">
+                        Route 13S: Everyday
+                    </div>
+                    <div class="accordion__inside">
+                        <ul>
+                            <li>Fall Creek Shopper</li>
+                            <li>Also Serving: Commons, Aldi, DMV, Hancock St., Cascadilla @ Fulton (near new Greestar
+                                Co+op location)</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="accordion__item">
+                    <div class="accordion__outside">
+                        Route 14S: Everyday
+                    </div>
+                    <div class="accordion__inside">
+                        <ul>
+                            <li>West Hill Shopper</li>
+                            <li>Also Serving: Overlook Apts., Cayuga Meadows, Linderman Creek Apts., Conifer Village
+                                Apts., West Village, Chestnut Hill Apartments, Wegman’s, Tops, Walmart, Trader Joe’s
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="accordion__item">
+                    <div class="accordion__outside">
+                        Route 17: Everyday
+                    </div>
+                    <div class="accordion__inside">
+                        <ul>
+                            <li>Fall Creek – Commons</li>
+                            <li>Also Serving: TCAT Offices, W. Lincoln St., Cayuga St.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="accordion__item">
+                    <div class="accordion__outside">
+                        Route 20: Everyday
+                    </div>
+                    <div class="accordion__inside">
+                        <ul>
+                            <li>Enfield – Commons
+                            <li>Also Serving: Greenstar, Eco Village, Agway. Select trips serve Cornell West Campus.
+                            </li>
+                            <li>Saturday & Sunday: First trip is demand hiker drop-off at Bock Harvey Nature Preserve or
+                                the entrance to Upper Treman State Park. Route 67 picks up at the Lower Treman Stop
+                                (Elmira Rd @ Enfield Creek Bridge), allowing for a through hike.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="accordion__item">
+                    <div class="accordion__outside">
+                        Route 21: Everyday
+                    </div>
+                    <div class="accordion__inside">
+                        <ul>
+                            <li>Trumansburg – Commons</li>
+                            <li>Also Serving: Ulysses, Jacksonville, GreenStar, Agway, Cornell, Commons</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="accordion__item">
+                    <div class="accordion__outside">
+                        Route 30: Everyday
+                    </div>
+                    <div class="accordion__inside">
+                        <ul>
+                            <li>Shops at Ithaca Mall – Cornell – Commons</li>
+                            <li>Also Serving: Cornell, Community Corners, Kendal, Tops (Lansing), YMCA</li>
+                            <li>Detour: Partial Detour in Collegetown</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="accordion__item">
+                    <div class="accordion__outside">
+                        Route 31 / 41: Mon-Fri
+                    </div>
+                    <div class="accordion__inside">
+                        <ul>
+                            <li>Etna – Cornell – Winston Court</li>
+                            <li>Also Serving: Winston Court, Community Corners, Etna Rd., Highland, The Parkway, Hanshaw
+                                Rd., Guthrie, Lower Creek Rd., Creekwood Apts., Hanshaw VIllage, Sapsucker Woods, Lab of
+                                Ornithology,</li>
+                            <li>See route 77 Tconnect for weekend service to Winston Court See route 32 for demand
+                                service to Convenient Care</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="accordion__item">
+                    <div class="accordion__outside">
+                        Route 32: Everyday
+                    </div>
+                    <div class="accordion__inside">
+                        <ul>
+                            <li>Airport – Cornell – Commons</li>
+                            <li>Also Serving: Cornell Business Park, Langmuir Lab, Northwood Apts., Gaslight Village,
+                                Uptown Village, University Park, Convenient Care, Community Corners, Statler Hall,
+                                Tompkins County Health Department No service to Collegetown</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="accordion__item">
+                    <div class="accordion__outside">
+                        Route 36: Mon-Fri
+                    </div>
+                    <div class="accordion__inside">
+                        <ul>
+                            <li>Lansing School</li>
+                            <li>Also Serving: Lansing H.S., Cornell, Commons, Ithaca H.S., Cayuga Mall, Shops at Ithaca
+                                Mall</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="accordion__item">
+                    <div class="accordion__outside">
+                        Route 37: Mon-Fri
+                    </div>
+                    <div class="accordion__inside">
+                        <ul>
+                            <li>Lansing Town Hall</li>
+                            <li>Also Serving: Lansing Town Hall, Village Solars, Warren @ Convenient Care, Cornell–Tower
+                                Road, Sage Hall, Commons.</li>
+                            <li>See route 77 Tconnect for weekend service to Warren Rd. and Village Solars</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="accordion__item">
+                    <div class="accordion__outside">
+                        Route 40: Everyday
+                    </div>
+                    <div class="accordion__inside">
+                        <ul>
+                            <li>Freeville – Groton</li>
+                            <li>Also Serving: Groton H.S., Varna, Etna, Dairy Bar, Sage Hall, Ithaca Commons</li>
+                            <li>See Route 43 for additional trips</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="accordion__item">
+                    <div class="accordion__outside">
+                        Route 51: Everyday
+                    </div>
+                    <div class="accordion__inside">
+                        <ul>
+                            <li>Eastern Heights – Cornell – Commons</li>
+                            <li>Also Serving: Commonland, Honness Lane, East Hill Plaza, Tower Road, Sage Hall, Vet
+                                School. Maplewood Park Apts. (No service to Collegetown due to construction on College
+                                Ave.)</li>
+                        </ul>
+                    </div>
+                </div>
+
+
+                <div class="accordion__item">
+                    <div class="accordion__outside">
+                        Route 43: Everyday
+                    </div>
+                    <div class="accordion__inside">
+                        <ul>
+                            <li>Dryden – TC3 (Select trips serve Freeville and Groton)</li>
+                            <li>Also Serving: South Dryden, Dryden Village, Varna, Vet School, Sage Hall, Commons.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="accordion__item">
+                    <div class="accordion__outside">
+                        Route 43: Everyday
+                    </div>
+                    <div class="accordion__inside">
+                        <ul>
+                            <li>Dryden – TC3 (Select trips serve Freeville and Groton)</li>
+                            <li>Also Serving: South Dryden, Dryden Village, Varna, Vet School, Sage Hall, Commons.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="accordion__item">
+                    <div class="accordion__outside">
+                        Route 52: Everyday
+                    </div>
+                    <div class="accordion__inside">
+                        <ul>
+                            <li>Caroline – Commons</li>
+                            <li>Also Serving: Slaterville Springs, Brooktondale, Bethel Grove, Cornell, Vet School, Sage
+                                Hall.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="accordion__item">
+                    <div class="accordion__outside">
+                        Route 53: Mon-Fri
+                    </div>
+                    <div class="accordion__inside">
+                        <ul>
+                            <li>Ellis Hollow – Varna</li>
+                            <li>Also Serving: The Commons, Cornell–Tower Road, Turkey Hill Rd., Ellis Hollow Rd.</li>
+                            <li>See route 52 for service to Brooktondale</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="accordion__item">
+                    <div class="accordion__outside">
+                        Route 65: Mon-Fri + Saturday
+                    </div>
+                    <div class="accordion__inside">
+                        <ul>
+                            <li>Danby</li>
+                            <li>Also Serving: Hillview Terrace Mobile Home Park, Danby Town Hall Park & Ride, Dotson
+                                Park, Ithaca Commons, Cornell–Tower Road</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="accordion__item">
+                    <div class="accordion__outside">
+                        Route 67: Everyday
+                    </div>
+                    <div class="accordion__inside">
+                        <ul>
+                            <li>Newfield</li>
+                            <li>Also Serving: Sunny’s, Meadowbrook, Valley Manor, Newfield Town Hall, Newfield Covered
+                                Bridge,
+                                Newfield Schools, Newfield Garden Apts, Treman State Park, Elmira Road, South Meadow,
+                                Clinton
+                                West Plaza, Ithaca Commons, Cornell–Tower Rd.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="accordion__item">
+                    <div class="accordion__outside">
+                        Route 82: Mon-Fri
+                    </div>
+                    <div class="accordion__inside">
+                        <ul>
+                            <li>Cornell Campus Service / East Hill Office Building</li>
+                            <li>Also Serving: East Hill Office Building, Ciser, East Hill Plaza, Maplewood Apts., East
+                                Ithaca
+                                Apts., Tower Rd., Sage Hall</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="accordion__item">
+                    <div class="accordion__outside">
+                        Route 83: Mon-Fri
+                    </div>
+                    <div class="accordion__inside">
+                        <ul>
+                            <li>Cornell Campus Service</li>
+                            <li>Also Serving: West Campus, Feeney Way, Sage Hall, Balch Hall, Highland Rd., Ridgewood
+                                Rd.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="accordion__item">
+                    <div class="accordion__outside">
+                        Route 92: Everyday
+                    </div>
+                    <div class="accordion__inside">
+                        <ul>
+                            <li>Cornell Campus Service</li>
+                            <li>Also Serving: West Campus, Collegetown, Schwartz CPA, Cradit Farm Drive, Appel Commons,
+                                Helen
+                                Newman Hall, Hasbrouck Apts., North Campus</li>
+                        </ul>
+                    </div>
+                </div>
+
             </div>
         </section>
     </main>
 
-    <!-- Bootstrap Javascript for Accordian & Carousel -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
-        crossorigin="anonymous"></script>
 </body>
 
 </html>

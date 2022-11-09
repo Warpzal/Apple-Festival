@@ -11,30 +11,61 @@
     <!-- Personal CSS -->
     <link rel="stylesheet" href="./styles/style.css">
 
+    <!-- Jquery Libarary -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"
+        integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
     <!-- Personal Javascript -->
     <script src="./script.js" defer></script>
+
 </head>
 
 <body>
     <header class="header">
         <!-- Navbar Logo -->
         <img loading="lazy" class="header__logo" src="./images/apple-harvest-logo.svg" alt="logo">
-        <h1 class="header__heading">Ithaca Apple Harvest Festival </h1>
+        <h1 class="header__heading">Ithaca Apple Harvest Festival</h1>
     </header>
 
-    <nav>
-
+    <nav class="navbar nav">
+        <!-- Hamburger Menu -->
+        <div class="hamburger-menu-container">
+            <img class="hamburger-menu" src="./images/hamburger-menu.svg" alt="menu" width="40px">
+        </div>
+        <ul class="nav__items">
+            <li class="nav__item">
+                <a class="nav__link active" href="./index.html">Home</a>
+            </li>
+            <li class="nav__item">
+                <a class="nav__link" href="./activities.html">Activities</a>
+            </li>
+            <li class="nav__item">
+                <a class="nav__link" href="./transportation.html">Transportation</a>
+            </li>
+            <li class="nav__item">
+                <a class="nav__link" href="./faq.html">FAQ</a>
+            </li>
+        </ul>
     </nav>
 
     <!-- Carousel -->
-    <div class="carousel">
+    <section class="carousel">
+        <img class="carousel__image" src="" alt="carousel-img">
+        <div class="carousel__arrows">
+            <div class="carousel__arrow--left carousel__arrow">
+                <i>></i>
+            </div>
+            <div class="carousel__arrow--right carousel__arrow">
+                <i>></i>
+            </div>
 
-    </div>
+        </div>
+    </section>
 
     <main>
         <section class="about">
             <h2 class="about__heading">Welcome to the Apple Harvest Festival</h2>
-
             <p class="pb-5">
                 Apple Harvest Festival will host plenty of farmstand fresh apples and produce, delectable apple and
                 seasonal baked goods, a variety of food trucks offering tasty bites, and a craft fair with artisans from
@@ -44,10 +75,10 @@
             </p>
         </section>
 
-        <!-- 40th Annual Apple Harvest Festival -->
+        <!-- History -->
         <section class="grid">
             <div class="img-container">
-                <img loading="lazy" class="img" loading=" lazy" src="./images/apple-basket-many.jpg" alt="apple basket">
+                <img loading="lazy" class="img" loading=" lazy" src="./images/apple-basket-many.jpg" alt="">
             </div>
 
             <div>
@@ -137,14 +168,14 @@
         <section class="grid py-5">
             <div>
                 <h2 class="pb-3">Vendors</h2>
-                <p>
+                <p class="pb-2">
                     With over 100 vendors present at the festival, there are many opportunities to be introduced to the
                     rich artisan and culinary community in Ithaca. Our food vendors feature apple-centric and other fall
                     classics for you to taste, and the craft vendors offer homemade goods like soaps, jewelry,
                     sculptures, clothing, and more! This is the perfect place to learn about and support Ithaca's small
                     businesses that encompass the heart of the town.
                 </p>
-                <ul>
+                <ul class="apple-list">
                     <li>Schweigarts Sugar Shack</li>
                     <li>Schoolyard Sugarbush</li>
                     <li>A J Teeterfarm</li>
@@ -154,7 +185,7 @@
                     <li>MacDonald Farms</li>
                     <li>Cornell Society of Horticulture</li>
                     <li>Laughing Goat Fiber Farm</li>
-                    <li>Robbie’s Produce</li>
+                    <li>Robbie's Produce</li>
                     <li>Picaflor Farm</li>
                     <li>Little Farm Bakery</li>
                     <li>Little Grey Bakery</li>
@@ -175,7 +206,7 @@
 
             <div>
                 <h2 class="pb-3">Cider Houses & Wineries</h2>
-                <ul>
+                <ul class="apple-list">
                     <li>Blackduck Cidery</li>
                     <li>Redbyrd Orchard</li>
                     <li>South Hill Cider</li>
@@ -194,7 +225,7 @@
         <section class="grid py-5">
             <div>
                 <h2 class="pb-3">Food Vendors</h2>
-                <ul>
+                <ul class="apple-list">
                     <li>Macarollin</li>
                     <li>Mr. Squeeze Lemonade</li>
                     <li>Kettle Corn Shoppe</li>
@@ -207,7 +238,7 @@
                     <li>On The Street Pitas</li>
                     <li>Silo Food Truck</li>
                     <li>B&B Kettle Korn</li>
-                    <li>Robbie’s Produce</li>
+                    <li>Robbie's Produce</li>
                     <li>PDRS Catering</li>
                     <li>Trini Style</li>
                     <li>Coltivare</li>
@@ -239,7 +270,7 @@
 
             <div>
                 <h2 class="pb-3">Crafters</h2>
-                <ul>
+                <ul class="apple-list">
                     <li>A&K Creations</li>
                     <li>Alchemist's Whim</li>
                     <li>All Forked Up Art</li>
